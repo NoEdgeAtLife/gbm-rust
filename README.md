@@ -1,0 +1,3 @@
+# gbm-rust
+
+cargo run
