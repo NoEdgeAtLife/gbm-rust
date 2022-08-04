@@ -1,4 +1,3 @@
-
 use plotters::prelude::*;
 use rand::Rng;
 

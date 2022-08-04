@@ -1,4 +1,3 @@
-
 use std::vec;
 use std::time::Instant;
 /// Generate geometric brownian motion
@@ -35,7 +34,7 @@ pub fn geometric_brownian_motion_plot() -> Result<(), Box<dyn std::error::Error>
     let now = Instant::now();
     let n = 100;
     for _ in 0..n{
-        let vals = generate_geometric_brownian_motion(0.08, 0.01/365.0, 365, 500.0, 25.0);
+        let vals = generate_geometric_brownian_motion(0.08, 1.0/1440.0, 1440, 0.5, 0.1);
         val.push(vals);
     }
     let elapsed_time = now.elapsed();
